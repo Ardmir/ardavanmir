@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ardavan Mir | Portfolio</title>
+  <style>
+    body {
+      margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+      color: #212529;
+      line-height: 1.6;
+      display: flex; flex-direction: column; min-height: 100vh;
+    }
+    header {
+      background: #212529; color: #fff; padding: 2rem; text-align: center;
+    }
+    main {
+      flex: 1; max-width: 800px; margin: 2rem auto; padding: 0 1rem;
+    }
+    h1 {
+      font-size: 2.5rem; margin: 0 0 0.5rem;
+    }
+    h2 { margin-top: 2rem; }
+    .card {
+      background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem; margin-bottom: 1.5rem; transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    footer {
+      background: #212529; color: #ccc; text-align: center; padding: 1rem;
+      font-size: 0.9rem;
+    }
+    a { color: #007acc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Ardavan 👋</h1>
+    <p>Designer, innovator, and creator of meaningful user experiences.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>About Me</h2>
+      <p>I'm a product designer focused on blending strategy with creativity. My work spans fintech, education, and beyond, always rooted in user-centered design.</p>
+    </section>
+
+    <section class="card">
+      <h2>Case Studies</h2>
+      <p>Coming soon: Explore my work on <strong>QuickBooks Classes 2.0</strong>, <strong>Xello Elementary</strong>, and <strong>Nobu Brand Strategy</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Let's connect: <a href="mailto:ardavanmir@outlook.com">ardavanmir@outlook.com</a></p>
+    </section>
+  </main>
+  <footer>
+    © 2025 Ardavan Mir • Built with ❤️ using GitHub Pages
+  </footer>
+</body>
+</html>
