@@ -1,10 +1,11 @@
-/* Root color system */
+/* styles.css */
 :root {
-  --color-bg: #1A1A1A; /* dark charcoal */
-  --color-text: #F5F5F5; /* soft white */
-  --color-accent: #9A6AFF; /* electric purple */
-  --color-highlight: #FF6B6B; /* optional warm coral */
-  --font-main: 'Inter', sans-serif;
+  --color-bg: #1A1A1A;
+  --color-text: #F5F5F5;
+  --color-accent: #9A6AFF;
+  --color-highlight: #FF6B6B;
+  --font-main: 'Satoshi', sans-serif;
+  --font-alt: 'Space Grotesk', sans-serif;
 }
 
 body {
@@ -13,6 +14,10 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-alt);
 }
 
 .hero {
