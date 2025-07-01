@@ -1,0 +1,146 @@
+/* Root color system */
+:root {
+  --color-bg: #1A1A1A; /* dark charcoal */
+  --color-text: #F5F5F5; /* soft white */
+  --color-accent: #9A6AFF; /* electric purple */
+  --color-highlight: #FF6B6B; /* optional warm coral */
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 0 1rem;
+}
+
+.hero .tagline {
+  font-size: 1.5rem;
+  max-width: 700px;
+  color: var(--color-accent);
+}
+
+.projects {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+  background-color: #222;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-content .project-tagline {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-content .cta {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.project-content .cta:hover {
+  border-color: var(--color-accent);
+}
+
+.about, .values, .contact {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2, .values h2, .contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values li {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.contact p, .contact ul {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero .tagline {
+    font-size: 1.2rem;
+  }
+}
